@@ -20,7 +20,7 @@
             <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 space-y-5 lg:space-x-5">
 
                 <!-- triangle card  -->
-                <div class="card bg-base-100 shadow-xl">
+                <div class="card bg-base-100 shadow-xl pt-10">
                     <figure><img src="./images/triangle.png" alt="triangle" /></figure>
                     <div class="card-body">
                       <h2 class="text-3xl font-semibold text-center">Triangle</h2>
@@ -44,7 +44,7 @@
                   </div>
 
                 <!-- rectangle card  -->
-                <div class="card bg-base-100 shadow-xl">
+                <div class="card bg-base-100 shadow-xl pt-10">
                     <figure><img src="./images/rectangle.png" alt="rectangle" /></figure>
                     <div class="card-body">
                       <h2 class="text-3xl font-semibold text-center">Rectangle</h2>
@@ -69,7 +69,7 @@
 
 
                 <!-- parallelogram card  -->
-                <div class="card bg-base-100 shadow-xl">
+                <div class="card bg-base-100 shadow-xl pt-10">
                     <figure><img src="./images/parallelogram.png" alt="rectangle" /></figure>
                     <div class="card-body">
                       <h2 class="text-3xl font-semibold text-center">Parallelogram</h2>
@@ -91,6 +91,80 @@
                       </div>
                     </div>
                   </div>
+
+
+                <!-- rhombus card  -->
+                <div class="card bg-base-100 shadow-xl pt-10">
+                    <figure><img src="./images/rhombus.png" alt="triangle" /></figure>
+                    <div class="card-body">
+                      <h2 class="text-3xl font-semibold text-center">Rhombus</h2>
+                      <p class="text-center">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub> </p>
+                     <div>
+                        <input id="rhombus-d1" class="w-24 text-2xl p-2 rounded-sm" type="text" placeholder="d1">
+                        <span class="mr-4 ml-2">cm</span>
+                        <input id="rhombus-d2" type="text" placeholder="d2" class="w-24 text-2xl p-2 rounded-sm">
+                        <span>cm</span>
+                     </div>
+
+                     <div>
+                        <p class="text-2xl">Area : <span id="rhombus-area"></span> <span>cm<sup>2</sup></span> </p>
+                     </div>
+
+
+                      <div class="card-actions">
+                        <button onclick="calculateRhombus()" class="btn btn-primary w-full">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+
+                <!-- pentagon card  -->
+                <div class="card bg-base-100 shadow-xl pt-10">
+                    <figure><img src="./images/pentagon.png" alt="rectangle" /></figure>
+                    <div class="card-body">
+                      <h2 class="text-3xl font-semibold text-center">Pentagon</h2>
+                      <p class="text-center">Area (A) = 0.5 x p x b </p>
+
+                      <div>
+                        <input id="pentagon-perimeter" class="w-24 text-2xl p-2 rounded-sm" type="text" placeholder="p">
+                        <span class="mr-4 ml-2">cm</span>
+                        <input id="pentagon-base" type="text" placeholder="b" class="w-24 text-2xl p-2 rounded-sm">
+                        <span>cm</span>
+                     </div>
+
+                     <div>
+                        <p class="text-2xl">Area : <span id="pentagon-area"></span> <span>cm<sup>2</sup></span> </p>
+                     </div>
+
+                      <div class="card-actions">
+                        <button onclick="calculatePentagon()" class="btn btn-primary w-full">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+
+
+                <!-- ellipse card  -->
+                <div class="card bg-base-100 shadow-xl pt-10">
+                    <figure><img src="./images/ellipse.png" alt="rectangle" /></figure>
+                    <div class="card-body">
+                      <h2 class="text-3xl font-semibold text-center">Ellipse</h2>
+                      <p class="text-center">Area (A) = 𝝅ab</p>
+
+                      <div>
+                        <input id="ellipse-a" class="w-24 text-2xl p-2 rounded-sm" type="text" placeholder="a">
+                        <span class="mr-4 ml-2">cm</span>
+                        <input id="ellipse-b" type="text" placeholder="b" class="w-24 text-2xl p-2 rounded-sm">
+                        <span>cm</span>
+                     </div>
+
+                     <div>
+                        <p class="text-2xl">Area : <span id="ellipse-area"></span> <span>cm<sup>2</sup></span> </p>
+                     </div>
+
+                      <div class="card-actions">
+                        <button onclick="calculateEllipse()" class="btn btn-primary w-full">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
             </div>
 
             <!-- area calculation -->
@@ -104,5 +178,8 @@
     <script src="./scripts/triangle.js"></script>
     <script src="./scripts/rectangle.js"></script>
     <script src="./scripts/parallelogram.js"></script>
+    <script src="./scripts/rhombus.js"></script>
+    <script src="./scripts/pentagon.js"></script>
+    <script src="./scripts/ellipse.js"></script>
   </body>
 </html>
